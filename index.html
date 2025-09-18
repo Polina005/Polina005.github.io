@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Задание 1</title>
+</head>
+<body>
+
+<h2>Задание 1: Ссылки</h2>
+
+<ol>
+    <li>
+        Абсолютная гиперссылка на главную страницу сайта kubsu.ru
+        <a href="http://kubsu.ru">Ссылка</a>
+    </li>
+    <li>
+        Абсолютная на главную сайта kubsu.ru в протоколе https
+        <a href="https://kubsu.ru">Ссылка</a>
+    </li>
+    <li>
+        <p>Ссылка-изображение</p>
+        <a href="https://kubsu.ru">
+            <img src="image.jpg" alt="error" width="180" height="150">
+        </a>
+    </li>
+    <li>
+        Сокращенная ссылка на внутреннюю страницу
+        <a href="/alk.html">Ссылка</a>
+    </li>
+    <li>
+        Сокращенная ссылка на главную страницу
+        <a href="/">Ссылка</a>
+    </li>
+    <li> Ссылка на фрагмент текущей страницы
+        <a href="#lol">Ссылка
+
+
+    </a></li>
+    <li>
+        Ссылка с тремя параметрами в URL
+        <a href="https://kubsu.ru/?faculty=rgf&area=op&group=13">Ссылка</a>
+    </li>
+    <li>
+        Ссылка с параметром id в URL
+        <a href="https://kubsu.ru/?id=660">Ссылка</a>
+    </li>
+    <li>
+        Относительная ссылка в текущем каталоге
+        <a href="./">Ссылка</a>
+    </li>
+    <li>
+        Относительная ссылка в каталоге about
+        <a href="/about">Ссылка</a>
+    </li>
+    <li>
+        Относительная ссылка на уровень выше
+        <a href="../">Ссылка</a>
+    </li>
+    <li>
+        Относительная ссылка на два уровня выше
+        <a href="../../">Ссылка</a>
+    </li>
+    <li>
+        Контекстная ссылка в тексте.
+        Текст с контекстной ссылкой внутри.<a href="#lol"> Ссылка</a>
+    </li>
+    <li>
+        Ссылка на фрагмент стороннего сайта
+        <a href="https://www.iana.org/help/example-domains#legalnotice">Ссылка</a>
+    </li>
+    <li>
+        <p>Ссылка из областей картинки</p>
+        <img src="po.png" alt="Картинка с разными областями" usemap="#po"
+             width="627" height="324">
+        <map name="po">
+            <area shape="rect" coords="385,75,580,250" href="/rect" alt="rect">
+            <area shape="circle" coords="205,173,100" href="/circle" alt="circle">
+        </map>
+
+    </li>
+    <li>
+        Ссылка с пустым href
+        <a href="">Cсылка</a>
+    </li>
+    <li>
+        Ссылка без href
+        <a>Ссылка</a>
+    </li>
+    <li>
+        Ссылка с запретом перехода для поисковиков
+        <a href="https://kubsu.ru/no-follow" rel="nofollow">Ссылка</a>
+    </li>
+    <li>
+        Ссылка с запретом индексации
+        <a href="https://kubsu.ru/no-index" rel="noindex">Cсылка</a>
+    </li>
+    <li>
+        Нумерованный список с title
+        <ol>
+            <li><a href="https://kubsu.ru/" title="Официальный сайт КубГУ">Кубанский государственный университет</a></li>
+            <li><a href="https://kubsu.ru/university" title="Информация об университете">Об университете</a></li>
+            <li><a href="https://kubsu.ru/education" title="Образовательные программы">Образование</a></li>
+        </ol>
+    </li>
+    <li>
+        Ссылка на FTP с авторизацией
+        <a href="ftp://student6:969@kubsu.ru/">FTP файл</a>
+    </li>
+</ol>
+
+<h2>Форма обратной связи</h2>
+
+<form action="/" method="post">
+    <div>
+        <label>ФИО:
+            <input type="text" name="name" placeholder="Попова Полина Евгеньевна" required>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>Телефон:
+            <input type="tel" name="tel" placeholder="+7 (909) 451-43-93" required>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>Email:
+            <input type="email" name="email" placeholder="popova.p.2006@mail.ru" required>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>День рождения:
+            <input type="date" name="birthday" value="2006-02-08" required>
+        </label>
+    </div>
+    <br>
+    <div>
+        Пол:
+        <label>
+            <input type="radio" checked name="sex" value="Мужской">
+            Мужской
+        </label>
+        <label>
+            <input type="radio" name="sex" value="Женский">
+            Женский
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>
+            Любимые языкы программирования: <br>
+            <select name="lang" multiple="multiple" size="11" required>
+                <option value="Pascal">Pascal</option>
+                <option value="C">C</option>
+                <option value="Cpp" selected>C++</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+                <option value="Python" selected>Python</option>
+                <option value="Java" selected>Java</option>
+                <option value="Haskel">Haskel</option>
+                <option value="Clojure">Clojure</option>
+                <option value="Prolog">Prolog</option>
+                <option value="Scala">Scala</option>
+            </select>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label>Биография: <br>
+            <textarea cols="50" rows="5" required></textarea>
+        </label>
+    </div>
+    <div>
+        <label><input type="checkbox" name="check-1" required>
+            C контрактом ознакомлен(а)</label>
+    </div>
+    <div>
+        <button type="submit" style="margin: 10px;">Сохранить</button>
+    </div>
+</form>
+
+<img src="image.jpg" alt="error" id="lol" style="margin-top: 1000px;">
+
+</body>
+</html>
